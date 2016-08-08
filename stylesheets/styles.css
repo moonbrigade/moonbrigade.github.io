@@ -78,7 +78,6 @@ time, mark, audio, video {
 
 body {
   background-color: #fff;
-  padding:10px 50px 0 0;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
@@ -86,12 +85,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:36px 0 10px;
-}
-
-
-p, ul, ol, table, dl {
-  margin:0 0 22px;
+  margin:16px 0 8px;
 }
 
 h1, h2, h3 {
@@ -127,10 +121,6 @@ a {
   text-decoration:none;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
 a small {
 	font-size: 12px;
 }
@@ -146,82 +136,13 @@ strong {
 ul {
   list-style-position: inside;
   list-style: disc;
-  padding-left: 25px;
+  
 }
 
 ol {
   list-style-position: inside;
   list-style: decimal;
   padding-left: 25px;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0 0 0 20px;
-  font-style: italic;
-}
-
-dl, dt, dd, dl p {
-	font-color: #444;
-}
-
-dl dt {
-  font-weight: bold;
-}
-
-dl dd {
-  padding-left: 20px;
-  font-style: italic;
-}
-
-dl p {
-  padding-left: 20px;
-  font-style: italic;
-}
-
-hr {
-  border:0;
-  background:#ccc;
-  height:1px;
-  margin:0 0 24px;
-}
-
-/* Images */
-
-img {
-  position: relative;
-  margin: 0 auto;
-  max-width: 650px;
-  padding: 5px;
-  margin: 10px 0 32px 0;
-  border: 1px solid #ccc;
-}
-
-p img {
-  display: inline;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-  border: none;
-}
-
-/* Code blocks */
-
-code, pre {
-	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color:#000;
-  font-size:14px;
-}
-
-pre {
-	padding: 4px 12px;
-  background: #FDFEFB;
-  border-radius:4px;
-  border:1px solid #D7D8C8;
-  overflow: auto;
-  overflow-y: hidden;
-	margin-bottom: 32px;
 }
 
 
@@ -253,23 +174,23 @@ td {
 
 /* Wrapper */
 .wrapper {
-  width:960px;
+  width:942px;
 }
 
+div.about-us {
+	margin:0px 16px 16px 16px;
+}
 
 /* Header */
 
 header {
-	background-color: #171717;
+	background-color: #333333;
 	color: #FDFDFB;
-  width:170px;
-  float:left;
-  position:fixed;
-	border: 1px solid #000;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-	padding: 34px 25px 22px 50px;
-	margin: 30px 25px 0 0;
+  	width:260px;
+  	float:left;
+  	position:fixed;
+	padding: 16px 0px 16px 0px;
+	margin: 16px 0px 0 0;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -278,20 +199,32 @@ p.header {
 }
 
 h1.header {
-	font-size: 30px;
+	font-size: 32px;
 	font-weight: 300;
-	line-height: 1.3em;
+	line-height: 1em;
 	border-bottom: none;
-	margin-top: 0;
+	margin: 0px 16px 16px 16px;
+	text-align: center;
 }
 
 
-h1.header, a.header, a.name, header a{
+h1.header, header a, header h3 {
 	color: #fff;
 }
 
-a.header {
-	text-decoration: underline;
+header a {
+	font-size: 24px;
+}
+
+a.button {
+    display:block;
+	width:100%;
+	height:100%;
+}
+
+div.button-content {
+	margin: 0px 16px 8px 16px;
+    padding-top: 8px;
 }
 
 a.name {
@@ -303,23 +236,22 @@ header ul {
   padding:0;
 }
 
+header li:first-child {
+    margin-top:0;
+}
+
 header li {
+	margin-top:1px;
 	list-style-type: none;
-  width:132px;
-  height:15px;
-	margin-bottom: 12px;
-	line-height: 1em;
-	padding: 6px 6px 6px 7px;
+  	width:100%;
+  	height:100%;
+	line-height: 3em;
 
-	background: #0027ff;
-
-  border:1px solid #0D0D0D;
-
-
+	background: #0c8fff;
 }
 
 header li:hover {
-	background: #163aff;
+	background: #007ee9;
 }
 
 a.buttons {
@@ -347,17 +279,7 @@ section {
   width:650px;
   float:right;
   padding-bottom:50px;
-}
-
-
-/* Footer */
-
-footer {
-  width:170px;
-  float:left;
-  position:fixed;
-  bottom:10px;
-	padding-left: 50px;
+  margin:16px;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -373,29 +295,9 @@ footer {
     width:auto;
   }
 
-	footer {
-		border-top: 1px solid #ccc;
-		margin:0 84px 0 50px;
-		padding:0;
-	}
-
-  header {
-    padding-right:320px;
-  }
-
   section {
-    padding:20px 84px 20px 50px;
-    margin:0 0 20px;
-  }
-
-  header a small {
-    display:inline;
-  }
-
-  header ul {
-    position:absolute;
-    right:130px;
-    top:84px;
+    padding:0px 0px 0px 0px;
+    margin:16px;
   }
 }
 
@@ -403,20 +305,10 @@ footer {
   body {
     word-wrap:break-word;
   }
-
-  header {
-    padding:10px 20px 0;
-		margin-right: 0;
-  }
-
 	section {
-    padding:10px 0 10px 20px;
-    margin:0 0 30px;
+    padding:0px 0 0px 0px;
+    margin:0 0 0px;
   }
-
-	footer {
-		margin: 0 0 0 30px;
-	}
 
   header ul, header p.view {
     position:static;
@@ -428,14 +320,6 @@ footer {
   header ul li.download {
     display:none;
   }
-
-	footer {
-		margin: 0 0 0 20px;
-	}
-
-	footer a{
-		display:block;
-	}
 
 }
 
