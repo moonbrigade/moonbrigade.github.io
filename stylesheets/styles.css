@@ -184,12 +184,12 @@ div.about-us {
 /* Header */
 
 header {
-	background-color: #333333;
+	background-color: #040404;
 	color: #FDFDFB;
   	width:260px;
   	float:left;
   	position:fixed;
-	padding: 16px 0px 16px 0px;
+	padding: 0px 0px 16px 0px;
 	margin: 16px 0px 0 0;
 	-webkit-font-smoothing: antialiased;
 }
