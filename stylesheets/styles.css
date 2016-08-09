@@ -187,10 +187,10 @@ header {
 	background-color: #040404;
 	color: #FDFDFB;
   	width:260px;
+	height:100%;
   	float:left;
   	position:fixed;
 	padding: 0px 0px 16px 0px;
-	margin: 16px 0px 0 0;
 	-webkit-font-smoothing: antialiased;
 }
 
